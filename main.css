@@ -1,0 +1,267 @@
+:root {
+    --light-background: #E8FFCE;
+    --light-neon-blue: #ACFADF;
+    --mid-purple: #94ADD7;
+    --dark-purple: #7C73C0;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#header {
+    color: var(--dark-purple);
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#add-new-book {
+    padding: 20px;
+    border: 1px solid var(--dark-purple);
+    color: var(--dark-purple);
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+#add-new-book:hover {
+    background-color: var(--dark-purple);
+    color: white;
+}
+
+#nav-right {
+    padding-right: 20px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fa-solid fa-magnifying-glass {
+    position: absolute;
+}
+
+#search-for-book {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--dark-purple);
+  border-radius: 32px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--dark-purple)
+}
+
+#add-book-form {
+    border: 1px solid var(--dark-purple);
+    background-color: white;
+    width: 400px;
+    border-radius: 32px;
+    position: absolute;
+    top: 170px;
+    left: 35%;
+    z-index: 1;
+    display: none;
+}
+
+#book-form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
+#book-form h1 {
+    padding-bottom: 20px;
+    color: var(--dark-purple);
+    font-weight: bold;
+    text-align: center;
+}
+
+#form-questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--dark-purple);
+}
+
+#form-questions label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#book-author {
+    padding: 15px;
+    border: 0.5px solid var(--dark-purple);
+    border-radius: 32px;
+    font-size: 15px;
+    color: var(--dark-purple);
+}
+
+#book-title {
+    padding: 15px;
+    border: 0.5px solid var(--dark-purple);
+    border-radius: 32px;
+    font-size: 15px;
+    color: var(--dark-purple);
+}
+
+#form-questions textarea {
+    padding: 15px;
+    border-radius: 16px;
+    border: 0.5px solid var(--dark-purple);
+    color: var(--dark-purple);
+}
+
+#upload-book-cover {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#upload-book-cover input {
+    display: none;
+}
+#upload-book-cover label {
+    background-color: var(--dark-purple);
+    color: white;
+    border-radius: 16px;
+    padding: 10px;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+#form-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.form-button {
+    padding: 15px;
+    border-radius: 16px;
+    background-color: var(--dark-purple);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+
+}
+
+.form-button:hover{
+    font-size: 20px;
+    border:1px solid var(--light-background)
+}
+
+#display-book {
+    padding-left:10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:var(--dark-purple);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#book-card {
+    margin: 10px;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+    overflow:auto
+
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#book-card h1 {
+    color: var(--dark-purple);
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+#book-card h2 {
+    color: var(--mid-purple);
+    font-size: 15px;
+    padding-bottom:5px;
+}
+
+#book-card p {
+    font-size: 13px;
+    color: var(--mid-purple);
+    font-weight: bold;
+    padding-bottom: 5px;
+    word-spacing: 2px;
+}
+
+#display-title {
+    padding-top: 20px;
+    text-align: center;
+    color: white
+}
+
+
+
+#book-container {
+    background-color: var(--dark-purple);
+}
+
+#book-edit-button , #book-delete-button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--dark-purple);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#book-edit-button:hover , #book-delete-button:hover {
+    font-size: 20px;
+}
+
+
+

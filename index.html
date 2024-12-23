@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4ccaf702bb.js" crossorigin="anonymous"></script>
+    <link href="./main.css" rel="stylesheet"/>
+    <title>Librari</title>
+</head>
+<body>
+    <div id="header">
+        <nav id="nav-left">
+            <h1>Librari</h1>
+            <button id="add-new-book">Add New Book</button>
+        </nav>
+        <nav id="nav-right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="search-for-book" placeholder="Enter Book's Name..." type="text"/>
+        </nav>
+    </div>
+
+    <div id="add-book-form">
+        <form id="book-form">
+            <h1>Enter Details For Your New Book!</h1>
+            <div id="form-questions">
+                <label for="book-title">Book Title</label>
+                <input id="book-title" placeholder="Enter book's title">
+                <label for="book-author">Book Author</label>
+                <input id="book-author" placeholder="Enter book's author">
+                <label for="book-description">Book Description</label>
+                <textarea id="book-description" placeholder="Write a brief description of the book..."></textarea>
+            </div>
+            <div id="upload-book-cover">
+                <label for="book-cover">Upload Book Cover</label>
+                <input id="book-cover" type="file" accept="image/*">
+            </div>
+            <div id="form-buttons">
+                <button id="done-button" class="form-button" type="button">Done</button>
+                <button id="close-button" class="form-button" type="button">Close</button>
+            </div>
+        </form>
+    </div>
+    <div id="book-container">
+        <h1 id="display-title">Here Are Your Books:</h1>
+        <div id="display-book"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
